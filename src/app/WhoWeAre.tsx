@@ -1,4 +1,5 @@
 import { Users, Globe, Briefcase, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
@@ -36,7 +37,7 @@ export default function WhoWeAre() {
               
               {/* Main Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" 
                   alt="IGTL Team" 
                   className="w-full h-auto object-cover aspect-[3/4]"
