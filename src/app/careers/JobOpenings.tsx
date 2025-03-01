@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Briefcase, Clock, MapPin, Star } from 'lucide-react';
+import { Briefcase, Clock, Star } from 'lucide-react';
 import Link from 'next/link';
 
 function JobOpenings() {

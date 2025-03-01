@@ -19,21 +19,21 @@ function HeroSection() {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
-
+  
     // Auto-rotate features
     intervalRef.current = setInterval(() => {
-      setActiveFeature(prev => (prev + 1) % features.length);
+      setActiveFeature((prev) => (prev + 1) % features.length);
     }, 3000);
-
+  
     return () => {
       clearTimeout(timer);
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, []);
+  }, [features.length]);
+  
 
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 pt-16 overflow-hidden">
