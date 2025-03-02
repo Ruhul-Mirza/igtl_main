@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ArrowRight, Zap, BarChart2, Globe, Shield, BarChart, GlobeIcon, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Zap,  BarChart, GlobeIcon, ShieldCheck } from 'lucide-react';
 import WhoWeAre1 from "../../public/WhoWeAre1.avif"
 import Image from 'next/image';
 
