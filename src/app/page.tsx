@@ -4,7 +4,6 @@ import WhoWeAre from './WhoWeAre';
 import HomeHero from './HomeHero';
 import IndusriesWeServe from './IndustriesWeServe';
 
-
 function HeroSection() {
 
 
