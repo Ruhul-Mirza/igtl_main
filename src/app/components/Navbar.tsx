@@ -84,28 +84,28 @@ export default function Navbar() {
                       <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">Professional Services</p>
                     </div>
                     <div className="py-1">
-                      <Link href="/bpo-services" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/bposervices" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-orange-400 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-500"></div>
                         <div>
                           <p className="font-medium">Bpo Services</p>
                           
                         </div>
                       </Link>
-                      <Link href="/kpo-services" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/kposervices" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-yellow-400 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-yellow-500"></div>
                         <div>
                           <p className="font-medium">Kpo Services</p>
                           
                         </div>
                       </Link>
-                      <Link href="/technology-solutions" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/technologysolutions" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-orange-300 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-400"></div>
                         <div>
                           <p className="font-medium">Technology & Solutions</p>
                           
                         </div>
                       </Link>
-                      <Link href="/automotivetech-support" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/automotivetech" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-yellow-300 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-400"></div>
                         <div>
                           <p className="font-medium">Automotive Tech & Support</p>
@@ -156,7 +156,7 @@ export default function Navbar() {
       </div>
 
 {/* Mobile menu, show/hide based on menu state */}
-<div className={cn("md:hidden transition-all duration-300 ease-in-out", isOpen ? "max-h-96" : "max-h-0 overflow-hidden")}>
+<div className={cn("md:hidden transition-all bg-white duration-300 ease-in-out", isOpen ? "max-h-96" : "max-h-0 overflow-hidden")}>
   <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
     <Link 
       href="/about" 
@@ -178,28 +178,28 @@ export default function Navbar() {
     {/* Mobile Services Submenu */}
     <div className={cn("pl-4 space-y-1 transition-all duration-300", isServicesOpen ? "block" : "hidden")}>
       <Link 
-        href="/bpo-services" 
+        href="/bposervices" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Bpo Services
       </Link>
       <Link 
-        href="/kpo-services" 
+        href="/kposervices" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Kpo Services
       </Link>
       <Link 
-        href="/technology-solutions" 
+        href="/technologysolutions" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Technology & Solutions
       </Link>
       <Link 
-        href="/automotivetech-support" 
+        href="/automotivetech" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
