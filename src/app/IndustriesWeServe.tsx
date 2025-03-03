@@ -50,7 +50,7 @@ function IndusriesWeServe() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-16">
         <div className="mb-16 mx-auto">
           <div className="flex items-center mb-3">
             <div className="h-[2px] w-8 bg-yellow-500"></div>

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import WhatsAppButton from "./components/WhatsappButton";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,7 +23,9 @@ export default function RootLayout({
         className={`${inter.className} antialiased`}
       >
         <Navbar/>
+        <WhatsAppButton/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
