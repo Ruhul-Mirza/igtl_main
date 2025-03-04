@@ -1,16 +1,4 @@
-import { Metadata } from 'next';
-
-type ServiceMeta = {
-  title: string;
-  description: string;
-  keywords: string[];
-  openGraph: {
-    title: string;
-    description: string;
-  };
-};
-
-const serviceMetaData: Record<string, ServiceMeta> = {
+const serviceMetaData = {
   "bpo-services": {
     title: "BPO Services | Enhance Business Efficiency with IGTL",
     description: "Explore IGTL's Business Process Outsourcing solutions — customer support, data management, virtual assistance, and more to optimize your business operations.",
@@ -49,15 +37,8 @@ const serviceMetaData: Record<string, ServiceMeta> = {
   }
 };
 
-type ServiceLayoutProps = {
-  children: React.ReactNode;
-  params: {
-    service: string;
-  };
-};
-
-export async function generateMetadata({ params }: ServiceLayoutProps): Promise<Metadata> {
-  const { service } =await params;
+export async function generateMetadata({ params }) {
+  const { service } = await params;
   const meta = serviceMetaData[service];
 
   if (!meta) {
@@ -83,6 +64,6 @@ export async function generateMetadata({ params }: ServiceLayoutProps): Promise<
   };
 }
 
-export default function ServiceLayout({ children }: ServiceLayoutProps) {
+export default function ServiceLayout({ children }) {
   return <main>{children}</main>;
 }
