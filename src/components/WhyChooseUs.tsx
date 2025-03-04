@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 function WhyChooseUs() {
     return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 md:p-8">
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 md:p-8" data-aos="fade-left" >
             <div className="container mx-auto max-w-7xl w-full p-6 md:p-10">
-                <h1 className="text-3xl animate-bounce md:text-4xl lg:text-5xl font-bold text-orange-600 mb-10 md:mb-20 text-center lg:text-left">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-orange-600 mb-10 md:mb-20 text-center lg:text-left">
                     Why Choose Us?
                 </h1>
 

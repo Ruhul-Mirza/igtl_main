@@ -3,7 +3,7 @@ export default function VisionMission() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Vision Card */}
-        <div className="relative bg-white rounded-2xl shadow-sm overflow-hidden group transition-all duration-300">
+        <div className="relative bg-white rounded-2xl shadow-sm overflow-hidden group transition-all duration-300" data-aos="fade-right" >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-orange-600"></div>
           <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500 opacity-10 rounded-bl-full transform translate-x-6 -translate-y-6"></div>
           <div className="p-10">
@@ -23,7 +23,7 @@ export default function VisionMission() {
         </div>
 
         {/* Mission Card */}
-        <div className="relative bg-white rounded-2xl shadow-sm overflow-hidden group transition-all duration-300">
+        <div className="relative bg-white rounded-2xl shadow-sm overflow-hidden group transition-all duration-300" data-aos="fade-left" >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-orange-600"></div>
           <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500 opacity-10 rounded-bl-full transform translate-x-6 -translate-y-6"></div>
           <div className="p-10">

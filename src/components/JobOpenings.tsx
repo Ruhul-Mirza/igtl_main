@@ -54,7 +54,8 @@ function JobOpenings() {
           {jobCards.map((jobCard, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col h-full"
+              data-aos="fade-down"
+              className="bg-white rounded-xl  overflow-hidden border border-gray-100 flex flex-col h-full"
             >
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-start justify-between mb-4">

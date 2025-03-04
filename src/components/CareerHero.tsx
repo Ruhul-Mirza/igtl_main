@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import careerHero from "../../../public/Hiring-cuate.png"
+import careerHero from "../../public/Hiring-cuate.png"
 import Link from "next/link"
 import { ArrowRight, TrendingUp, Activity, Lightbulb } from "lucide-react"
 export default function CareerHero() {
@@ -10,7 +10,7 @@ export default function CareerHero() {
 
                 <div className="max-w-screen-xl px-6 py-16 mx-auto lg:py-24 relative z-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 items-center gap-12">
-                        <div className="lg:col-span-7 text-center md:text-left">
+                        <div className="lg:col-span-7 text-center md:text-left" data-aos="fade-right">
                             <div className="flex items-center justify-center md:justify-start mb-6">
                                 <div className="h-1 w-12 bg-orange-500 mr-3"></div>
                                 <span className="text-orange-600 font-semibold tracking-wider uppercase text-sm">Careers</span>
@@ -51,7 +51,7 @@ export default function CareerHero() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="lg:col-span-5 flex justify-center mt-10 lg:mt-0">
+                        <div className="lg:col-span-5 flex justify-center mt-10 lg:mt-0" data-aos="fade-left">
                             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
                                 <div className="absolute -top-4 -left-4 w-20 h-20 bg-orange-500/10 rounded-full blur-xl"></div>
                                 <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-orange-500/10 rounded-full blur-xl"></div>

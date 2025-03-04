@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import { cn } from '../lib/utils';
+import { cn } from '../app/lib/utils';
 import Image from 'next/image';
-import Logo from "../../../public/Logo.png"
+import Logo from "../../public/Logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,28 +84,28 @@ export default function Navbar() {
                       <p className="text-xs font-medium text-gray-500 uppercase tracking-wider">Professional Services</p>
                     </div>
                     <div className="py-1">
-                      <Link href="/bposervices" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/bpo-services" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-orange-400 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-500"></div>
                         <div>
                           <p className="font-medium">Bpo Services</p>
                           
                         </div>
                       </Link>
-                      <Link href="/kposervices" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/kpo-services" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-yellow-400 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-yellow-500"></div>
                         <div>
                           <p className="font-medium">Kpo Services</p>
                           
                         </div>
                       </Link>
-                      <Link href="/technologysolutions" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/tech-solutions" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-orange-300 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-400"></div>
                         <div>
                           <p className="font-medium">Technology & Solutions</p>
                           
                         </div>
                       </Link>
-                      <Link href="/automotivetech" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
+                      <Link href="/auto-tech" className="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500">
                         <div className="w-2 h-2 rounded-full bg-yellow-300 mr-3 transform transition-all duration-300 group-hover:scale-150 group-hover:bg-orange-400"></div>
                         <div>
                           <p className="font-medium">Automotive Tech & Support</p>
@@ -178,28 +178,28 @@ export default function Navbar() {
     {/* Mobile Services Submenu */}
     <div className={cn("pl-4 space-y-1 transition-all duration-300", isServicesOpen ? "block" : "hidden")}>
       <Link 
-        href="/bposervices" 
+        href="/bpo-services" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Bpo Services
       </Link>
       <Link 
-        href="/kposervices" 
+        href="/kpo-services" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Kpo Services
       </Link>
       <Link 
-        href="/technologysolutions" 
+        href="/tech-solutions" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >
         Technology & Solutions
       </Link>
       <Link 
-        href="/automotivetech" 
+        href="/auto-tech" 
         className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-white hover:bg-orange-500 transition-colors duration-300"
         onClick={() => setIsOpen(false)}
       >

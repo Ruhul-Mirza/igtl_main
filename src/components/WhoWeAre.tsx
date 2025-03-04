@@ -32,7 +32,9 @@ function WhoWeAre() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with improved responsiveness */}
-      <section className="relative min-h-[80vh] flex items-center">
+      <section className="relative min-h-[80vh] flex items-center" data-aos="fade-right"
+     data-aos-offset="300"
+     >
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/70 z-10"></div>
           <Image
@@ -78,7 +80,8 @@ function WhoWeAre() {
           {/* Feature Cards - Completely redesigned for perfect responsiveness */}
           <div className="mt-16">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" data-aos="fade-up"
+     >
               {coreValueCards.map((coreValueCard, index) => {
                 const Icon = coreValueCard.icon
 

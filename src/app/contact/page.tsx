@@ -1,6 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Mail, Phone, MapPin, Send, ArrowRight, ExternalLink, ExternalLinkIcon } from 'lucide-react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from 'next/link';
 
 
@@ -10,7 +12,13 @@ export default function Home() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
   const [previewUrl, setPreviewUrl] = useState('');
-
+  useEffect(() => {
+    AOS.init({
+      duration: 700, // Animation duration in milliseconds
+      once: true, // Whether animation should only run once
+      easing: "ease-in-out", // Easing function
+    });
+  }, []);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -50,7 +58,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-40">
+      <section className="relative overflow-hidden py-20 md:py-40" data-aos="fade-down">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-0 w-full h-full bgg-transparent"></div>
           <div className="absolute top-0 left-0 w-full h-full">
@@ -89,7 +97,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
               {/* Contact Info */}
-              <div className="lg:col-span-2 space-y-8">
+              <div className="lg:col-span-2 space-y-8" data-aos="fade-right">
                 <div>
                   <h2 className="text-3xl text-amber-500 font-bold mb-2">Contact Information</h2>
                   <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full mb-6"></div>
@@ -132,11 +140,11 @@ export default function Home() {
               </div>
               
               {/* Contact Form */}
-              <div className="lg:col-span-3 bg-white backdrop-blur-sm rounded-2xl p-8 border border-zinc-200 shadow-sm">
+              <div className="lg:col-span-3 bg-white backdrop-blur-sm rounded-2xl px-8 pt-6 pb-8 border border-zinc-200 shadow-sm" data-aos="fade-left">
                 <h2 className="text-2xl font-bold text-orange-500 mb-6">Send us a message</h2>
                 
                 {isSubmitted ? (
-                  <div className="bg-gray-100 border border-zinc-200 shadow-sm rounded-xl p-8 text-center">
+                  <div className="bg-gray-100 border h-[88%] border-zinc-200 shadow-sm rounded-xl md:py-20 px-8 py-10 text-center">
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white mb-6">
                       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -167,7 +175,7 @@ export default function Home() {
                       }}
                       className="px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all duration-300 font-medium flex items-center justify-center mx-auto"
                     >
-                      Send another message
+                      New message
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </button>
                   </div>

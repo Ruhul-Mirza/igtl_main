@@ -71,6 +71,7 @@ function IndusriesWeServe() {
             <div 
               key={index} 
               className="group cursor-pointer bg-gray-50  border border-zinc-200 border-l-4  hover:border-l-orange-500 transition-all duration-300 ease-in-out"
+               data-aos="fade-up" 
             >
               <div className="p-8">
                 <div className="flex items-center gap-3 mb-5">

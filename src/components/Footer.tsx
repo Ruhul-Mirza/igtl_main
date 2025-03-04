@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../public/Logo.png"
+import Logo from "../../public/Logo.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="flex flex-col">
             <div className="text-teal-600 ">
-              <Image src={logo} alt="Apeiro Logo" className="w-40" />
+              <Image src={Logo} alt="Apeiro Logo" className="w-40" />
               
             </div>
             <p className="mt-4 text-left text-black font-semibold">
@@ -166,23 +166,23 @@ const Footer = () => {
               <ul className="mt-4 space-y-3 text-sm font-medium">
                 <li>
                   <Link
-                    href="/kposervices"
+                    href="/kpo-services"
                     className="text-black transition hover:underline hover:text-orange-400"
                   >
-                    Kpo Services
+                    KPO Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/bposervices"
+                    href="/bpo-services"
                     className="text-black transition hover:underline hover:text-orange-400"
                   >
-                    Bpo Services
+                    BPO Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/technologysolutions"
+                    href="/tech-solutions"
                     className="text-black transition hover:underline hover:text-orange-400"
                   >
                     Technology & Solutions
@@ -190,7 +190,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/automotivetech"
+                    href="/auto-tech"
                     className="text-black transition hover:underline hover:text-orange-400"
                   >
                     Automotive Tech & Support

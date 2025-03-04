@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-white" data-aos="fade-right" >
       <div className="absolute inset-0 bg-gradient-to-r from-orange-100 to-orange-50 opacity-70"></div>
 
       <div className="absolute left-0 bottom-0 w-64 h-64 bg-gradient-to-tr from-orange-200 to-transparent rounded-tr-full opacity-70"></div>
