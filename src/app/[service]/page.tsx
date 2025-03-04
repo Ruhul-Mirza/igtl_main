@@ -150,9 +150,9 @@ const servicesData: ServicesData = {
   }
 };
 type ServicePageProps = {
-  params: {
+  params: Promise<{
     service: string;
-  };
+  }>;
 };
 
 export default async function ServicePage({ params }: ServicePageProps) {
