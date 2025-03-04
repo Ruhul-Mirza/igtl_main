@@ -89,7 +89,7 @@ export default function AdvantagesCarousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="bg-gray-50 min-h-80vh py-12 px-4 md:py-16" data-aos="fade-up">
+    <section className="bg-gray-50 py-12 px-4 md:py-16" data-aos="fade-up">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 relative">
        
