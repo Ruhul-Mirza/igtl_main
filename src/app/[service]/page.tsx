@@ -156,7 +156,7 @@ type ServicePageProps = {
 };
 
 export default async function ServicePage({ params }: ServicePageProps) {
-  const { service } = params;
+  const { service } = await params;
 
   const serviceInfo = servicesData[service] || {
     title: "Service Not Found",

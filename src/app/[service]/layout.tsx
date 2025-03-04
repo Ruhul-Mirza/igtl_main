@@ -57,7 +57,7 @@ type ServiceLayoutProps = {
 };
 
 export async function generateMetadata({ params }: ServiceLayoutProps): Promise<Metadata> {
-  const { service } = params;
+  const { service } =await params;
   const meta = serviceMetaData[service];
 
   if (!meta) {
