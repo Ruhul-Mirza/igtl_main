@@ -51,13 +51,13 @@ const serviceMetaData: Record<string, ServiceMeta> = {
 
 type ServiceLayoutProps = {
   params: {
-    slug: string;
+    service: string;
   };
 };
 
 export async function generateMetadata({ params }: ServiceLayoutProps): Promise<Metadata> {
-  const { slug } = params;
-  const meta = serviceMetaData[slug];
+  const { service } = params;
+  const meta = serviceMetaData[service];
 
   if (!meta) {
     // Fallback metadata for unknown slugs
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: ServiceLayoutProps): Promise<
   };
 }
 
-export default function ServiceLayout({ params,children }: { children: React.ReactNode,params: ServiceLayoutProps }) {
+export default function ServiceLayout({ children }: { children: React.ReactNode }) {
     
     return <main>{children}</main>;
 }
