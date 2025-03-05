@@ -139,6 +139,9 @@ export default function PrivacyPolicy() {
                 )}
               </section>
             ))}
+            <p className="text-lg text-center font-semibold text-black">
+              By using our website & services,you agree to the terms outlined in this Privacy Policy.
+            </p>
           </div>
         </div>
       </div>

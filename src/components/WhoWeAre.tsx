@@ -4,6 +4,7 @@ import React from 'react';
 import { ArrowRight, Zap,  BarChart, GlobeIcon, ShieldCheck } from 'lucide-react';
 import WhoWeAre1 from "../../public/WhoWeAre1.avif"
 import Image from 'next/image';
+import Link from 'next/link';
 
 function WhoWeAre() {
   const coreValueCards = [
@@ -54,10 +55,13 @@ function WhoWeAre() {
             <p className="text-md sm:text-ld md:text-xl text-white/90 font-light leading-relaxed mb-8 md:mb-10 max-w-2xl">
               At IGTL, we are a team of industry experts committed to transforming businesses through innovative outsourcing and technology solutions.
             </p>
+            <Link href="/about">
             <button className="group inline-flex items-center gap-2 bg-orange-500 text-white px-6 sm:px-8 py-3 cursor-pointer rounded-md hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
               <span className="font-medium tracking-wide">DISCOVER MORE</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
+            </Link>
+            
           </div>
         </div>
       </section>
