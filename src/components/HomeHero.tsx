@@ -181,7 +181,7 @@ function HomeHero() {
     {/* Floating text elements */}
     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <div className="bg-white px-4 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg animate-float" style={{ animationDuration: '4s' }}>
-        <span className="text-xs sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
+        <span className="text-xs sm:text-sm  lg:text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
           Innovation
         </span>
       </div>
@@ -189,7 +189,7 @@ function HomeHero() {
 
     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
       <div className="bg-white px-4 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg animate-float" style={{ animationDuration: '4.5s', animationDelay: '0.5s' }}>
-        <span className="text-xs sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
+        <span className="text-xs sm:text-sm lg:text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
           Excellence
         </span>
       </div>
@@ -197,7 +197,7 @@ function HomeHero() {
 
     <div className="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <div className="bg-white px-4 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg animate-float" style={{ animationDuration: '5s', animationDelay: '1s' }}>
-        <span className="text-xs sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
+        <span className="text-xs sm:text-sm lg:text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
           Solutions
         </span>
       </div>
@@ -205,7 +205,7 @@ function HomeHero() {
 
     <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2">
       <div className="bg-white px-4 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg animate-float" style={{ animationDuration: '4.2s', animationDelay: '1.5s' }}>
-        <span className="text-xs sm:text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
+        <span className="text-xs sm:text-sm lg:text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-500">
           Growth
         </span>
       </div>

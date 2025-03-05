@@ -19,6 +19,7 @@ import {
   MapPin,
   BatteryCharging
 } from "lucide-react";
+import ServicesCarousel from '@/components/ServicesCarousel';
 type SubService = {
   title: string;
   description: string;
@@ -205,25 +206,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {serviceInfo.subServices.map((subService, index) => (
-                <div
-                  key={index}
-                  className="group relative overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-500 ease-in-out border border-gray-100 hover:border-amber-200"
-                >
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                  <div className="p-6 sm:p-8">
-                    <div className="mb-5 p-3 bg-amber-50 rounded-xl inline-block">
-                      {subService.icon}
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">
-                      {subService.title}
-                    </h3>
-                    <p className="text-gray-600 mb-6">{subService.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ServicesCarousel subServices={serviceInfo.subServices}/>
           </div>
         </section>
       )}

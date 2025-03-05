@@ -22,21 +22,6 @@ function IndusriesWeServe() {
       description: "Cutting-edge platforms that transform online shopping experiences."
     },
     {
-      icon: <Landmark size={24} />,
-      title: "Finance & Banking",
-      description: "Secure and efficient systems for modern financial institutions."
-    },
-    {
-      icon: <Phone size={24} />,
-      title: "Telecommunications",
-      description: "Advanced communication solutions connecting people worldwide."
-    },
-    {
-      icon: <Plane size={24} />,
-      title: "Travel & Hospitality",
-      description: "Seamless experiences for travelers and hospitality providers."
-    },
-    {
       icon: <Store size={24} />,
       title: "Retail & Consumer Services",
       description: "Transformative solutions enhancing the retail customer journey."
@@ -66,7 +51,7 @@ function IndusriesWeServe() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
           {industries.map((industry, index) => (
             <div 
               key={index} 
