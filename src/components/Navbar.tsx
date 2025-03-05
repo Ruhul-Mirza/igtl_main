@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center group">
-              <Image src={Logo} width={100} alt='Igtl Logo'></Image>
+              <Image src={Logo} width={150} alt='Igtl Logo'></Image>
 
             </Link>
           </div>
