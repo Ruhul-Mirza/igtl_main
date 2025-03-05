@@ -15,21 +15,21 @@ function WhyChooseUs() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-8 md:mb-12">
                     <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                         <div className="flex flex-col sm:flex-row items-start sm:space-x-4">
-                            <div className="bg-indigo-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
-                                <Lightbulb className="h-6 w-6 text-indigo-600" />
+                            <div className="bg-amber-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
+                                <Lightbulb className="h-6 w-6 text-amber-600" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-base md:text-lg text-indigo-600 mb-1 md:mb-2">Industry Expertise & Innovation</h3>
+                                <h3 className="font-bold text-base md:text-lg text-amber-600 mb-1 md:mb-2">Industry Expertise & Innovation</h3>
                                 <p className="text-gray-600 font-medium">Our team combines deep domain expertise with the latest technological advancements to deliver top-tier solutions.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-start sm:space-x-4">
-                            <div className="bg-emerald-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
-                                <DollarSign className="h-6 w-6 text-emerald-600" />
+                            <div className="bg-amber-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
+                                <DollarSign className="h-6 w-6 text-amber-600" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-base md:text-lg text-emerald-600 mb-1 md:mb-2">Cost-Effective Solutions</h3>
+                                <h3 className="font-bold text-base md:text-lg text-amber-600 mb-1 md:mb-2">Cost-Effective Solutions</h3>
                                 <p className="text-gray-600 font-medium">Reduce operational costs while maintaining high-quality service standards and efficiency.</p>
                             </div>
                         </div>
@@ -45,11 +45,11 @@ function WhyChooseUs() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-start sm:space-x-4">
-                            <div className="bg-rose-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
-                                <LayoutGrid className="h-6 w-6 text-rose-600" />
+                            <div className="bg-amber-100 p-3 rounded-full mb-3 sm:mb-0 flex-shrink-0">
+                                <LayoutGrid className="h-6 w-6 text-amber-600" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-base md:text-lg text-rose-600 mb-1 md:mb-2">Customized & Scalable Services</h3>
+                                <h3 className="font-bold text-base md:text-lg text-amber-600 mb-1 md:mb-2">Customized & Scalable Services</h3>
                                 <p className="text-gray-600 font-medium">We tailor solutions to meet specific business needs and scale with organizational growth.</p>
                             </div>
                         </div>

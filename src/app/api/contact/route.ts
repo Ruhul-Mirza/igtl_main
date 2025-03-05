@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     // Email content
     const mailOptions = {
       from: `"Contact Form" <${process.env.EMAIL_USER}>`,
-      to: `${email}`, // Your recipient email
+      to: `ruhulmirza743@gmail.com`, // Your recipient email
       subject: `Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
@@ -36,11 +36,11 @@ export async function POST(request: Request) {
       `,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #f97316;">New Contact Form Submission</h2>
+          <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <div style="margin-top: 20px;">
-            <h3 style="color: #f97316;">Message:</h3>
+          <div style="margin-top: 10px;">
+            <h3>Message:</h3>
             <p style="white-space: pre-line;">${message}</p>
           </div>
         </div>

@@ -114,9 +114,9 @@ function HomeHero() {
                                             key={index}
                                             onClick={() => setActiveFeature(index)}
                                             className={cn(
-                                                "w-2 h-2 rounded-full transition-all duration-300",
+                                                "w-20 h-2 rounded-full transition-all duration-300",
                                                 activeFeature === index
-                                                    ? "bg-orange-500 w-8"
+                                                    ? "bg-orange-500 w-28"
                                                     : "bg-gray-300 hover:bg-orange-300"
                                             )}
                                         />

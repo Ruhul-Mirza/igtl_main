@@ -6,34 +6,34 @@ import Link from 'next/link';
 function JobOpenings() {
   const jobCards = [
     {
-      title: "Customer Support Executives",
-      experience: "+2 years",
-      work: "Remote"
+      title: "Customer Success Associate",
+      experience: "0-5 years",
+      work: "Onsite"
     }, 
     {
-      title: "Data Analysts",
-      experience: "+2 years",
-      work: "Remote"
+      title: "Data Engineer",
+      experience: "3+ years",
+      work: "Onsite/Hybrid"
     }, 
     {
-      title: "Software Developers",
-      experience: "+2 years",
-      work: "Remote"
+      title: "Data Engineering Manager",
+      experience: "8+ years",
+      work: "Onsite/Hybrid"
     }, 
     {
-      title: "IT Support Specialists",
-      experience: "+2 years",
-      work: "Remote"
+      title: "Full Stack Developer",
+      experience: "5+ years",
+      work: "Onsite/Hybrid"
     }, 
     {
-      title: "HR & Finance Professionals",
-      experience: "+2 years",
-      work: "Remote"
+      title: "QA Engineer",
+      experience: "2+ years",
+      work: "Onsite/Hybrid"
     }, 
     {
-      title: "Business Development Managers",
-      experience: "+2 years",
-      work: "Remote"
+      title: "Data Platform Engineer",
+      experience: "5+ years",
+      work: "Onsite/Hybrid"
     }
   ];
 

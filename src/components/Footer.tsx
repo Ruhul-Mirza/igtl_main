@@ -11,10 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 pb-4 border-b border-zinc-300 lg:grid-cols-2 gap-8 lg:gap-28">
           {/* Logo and Description */}
           <div className="flex flex-col">
-            <div className="text-teal-600 ">
+            <Link href="/">
+            
               <Image src={Logo} alt="Apeiro Logo" className="w-40" />
+            </Link>
               
-            </div>
+            
             <p className="mt-4 text-left text-black font-semibold">
             Infiglobal Techlogix Pvt Ltd
             </p>
