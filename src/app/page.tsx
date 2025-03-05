@@ -5,7 +5,6 @@ import WhoWeAre from '../components/WhoWeAre';
 import HomeHero from '../components/HomeHero';
 import IndusriesWeServe from '../components/IndustriesWeServe';
 import WhyChooseUs from '../components/WhyChooseUs';
-import TestimonialCarousel from '../components/TestimonialCarousel';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -24,7 +23,7 @@ function HeroSection() {
     <WhoWeAre/>
     <WhyChooseUs/>
     <IndusriesWeServe/>
-    <TestimonialCarousel/>
+    {/* <TestimonialCarousel/> */}
     </>
   );
 }

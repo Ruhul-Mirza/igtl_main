@@ -32,7 +32,7 @@ function WhoWeAre() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with improved responsiveness */}
-      <section className="relative min-h-[80vh] flex items-center" data-aos="fade-right"
+      <section className="relative min-h-[60vh] flex items-center" data-aos="fade-right"
      data-aos-offset="300"
      >
         <div className="absolute inset-0 z-0">
@@ -48,7 +48,7 @@ function WhoWeAre() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Who We Are ???
+              Who We Are?
             </h1>
 
             <p className="text-md sm:text-ld md:text-xl text-white/90 font-light leading-relaxed mb-8 md:mb-10 max-w-2xl">
