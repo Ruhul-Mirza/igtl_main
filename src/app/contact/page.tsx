@@ -29,22 +29,37 @@ export default function Home() {
     setError('');
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const emailData = {
+        apikey: "41A0BD47695DBB546D534CDB0CE4C5616165D9C9B9560DA25C70C29340170EE1A41FAB0DE588B63DBF6323999429BC2E",
+        from: "wecare@infigtl.com",
+        to: "wecare@infigtl.com",
+        subject: "New Form Submitted",
+        bodyHtml: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${formData.name}</p>
+          <p><strong>Email:</strong> ${formData.email}</p>
+          <div style="margin-top: 10px;">
+            <h3>Message:</h3>
+            <p style="white-space: pre-line;">${formData.message}</p>
+          </div>
+        </div>
+      `,
+      };
+
+      const response = await fetch("https://api.elasticemail.com/v2/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(emailData),
       });
 
-      const data = await res.json();
-
-      if (res.ok) {
+      const result = await response.json();
+      console.log(result)
+      if (result) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
-        if (data.previewUrl) {
-          setPreviewUrl(data.previewUrl);
-        }
-      } else {
-        setError(data.error || 'Failed to send message. Please try again.');
       }
     } catch (err) {
       console.error(err);
