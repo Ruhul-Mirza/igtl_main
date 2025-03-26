@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import Link from 'next/link';
 
 
-export default function Home() {
+export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
