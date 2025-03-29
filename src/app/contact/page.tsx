@@ -128,7 +128,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg text-orange-500 mb-1">Our Location</h3>
-                      <p className="text-gray-500">Mumbai - Thane</p>
+                      <p className="text-gray-500">Akshar Business Park, P - 3015 , Turbhe Navi Mumbai</p>
                     </div>
                   </div>
                   
@@ -138,7 +138,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg text-orange-500 mb-1">Phone</h3>
-                      <p className="text-gray-500">+91 85911 28405</p>
+                      <p className="text-gray-500">022-6883-4996</p>
                     </div>
                   </div>
                   
