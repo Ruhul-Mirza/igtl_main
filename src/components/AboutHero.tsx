@@ -17,8 +17,8 @@ export default function AboutHero() {
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
             About <span className="text-orange-500">IGTL</span>
           </h1>
-          <p className="mt-6 text-xl md:text-2xl text-gray-600 max-w-2xl">
-            Empowering businesses through innovation and excellence
+          <p className="mt-6 text-xl md:text-2xl text-gray-600 max-w-3xl">
+            Empowering Enterprises to Operate Smarter and Scale Faster
           </p>
         </div>
       </div>
