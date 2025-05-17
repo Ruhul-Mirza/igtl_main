@@ -59,13 +59,6 @@ const coreValueCards = [
     content:
       "We believe the best outcomes are achieved through teamwork—both internally and with our clients—by sharing knowledge, resources, and insights.",
   },
-  {
-    id: "07",
-    title: "Responsibility",
-    icon: Leaf,
-    content:
-      "As a forward-thinking organization, we are committed to diversity, equity, inclusion, and environmental sustainability in every sphere of our operations.",
-  },
 ]
   return (
     <main className="min-h-screen bg-white">
